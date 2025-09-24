@@ -3,4 +3,6 @@
 
 změna provedena na lokále 2025-09-24 (9:51)
 
-další změna 2025-09-24 (10:05)
+_další změna 2025-09-24 (10:05)_
+
+**další změna provedena v Githubu 2025-09-24 (10:09)**
