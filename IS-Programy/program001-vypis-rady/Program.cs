@@ -39,7 +39,6 @@ while (again == "a")
         Console.Write("Nezadali jste celé číslo. Zadejte diferenci znovu: ");
     }
 
-
     Console.WriteLine();
     Console.WriteLine("++++++++++++++++++++++");
     Console.WriteLine("Zadali jste tyto hodnoty:");
@@ -50,17 +49,15 @@ while (again == "a")
     Console.WriteLine("První číslo: {0}, poslední číslo: {1}, diference: {2}", first, last, step);
     Console.WriteLine("++++++++++++++++++++++");
     Console.WriteLine();
-    
 
-
-
-
-
-
-
-
-
-
+    // Výpis řady čísel
+    Console.WriteLine();
+    Console.WriteLine("Výpis číselné řady:");
+    int current = first;
+    while (current <= last) {
+        Console.WriteLine(current);
+        current = current + step;
+    }
 
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
