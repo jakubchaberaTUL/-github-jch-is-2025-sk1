@@ -1,15 +1,33 @@
 ﻿string again = "a";
 while (again == "a")
 {
-    Console.Write("Program na vypsání číselné řady.\n");
-    Console.Write("Zadejte cislo: ");
+    Console.Clear();
+    Console.WriteLine("****************************");
+    Console.WriteLine("***** Název programu *****");
+    Console.WriteLine("****************************");
+    Console.WriteLine("******* Jakub Chabera ********");
+    Console.WriteLine("****************************");
+    Console.WriteLine();
 
+    // Vstup hodnoty do programu - špatně řešený
+    //Console.Write("Zadejte první číslo řady: ");
+    //int first = int.Parse(Console.ReadLine());
+
+    //Vstup hodnoty do programu 
+    Console.Write("Zadejte hodnotu (celé číslo): ");
     int first;
+
     while (!int.TryParse(Console.ReadLine(), out first))
     {
-        Console.Write("Neplatny vstup. Zadejte cislo: ");
+        Console.Write("Nezadali jste celé číslo. Zadejte hodnotu znovu: ");
     }
 
-    Console.Write("Pro opakovani stisknete 'a', jinak jiny znak: ");
+
+    Console.WriteLine();
+    Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
     again = Console.ReadLine();
+
+
 }
+
+
