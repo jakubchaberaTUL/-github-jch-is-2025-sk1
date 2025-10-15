@@ -1,15 +1,68 @@
 ﻿string again = "a";
 while (again == "a")
 {
-    Console.Write("Program na vypsání číselné řady.\n");
-    Console.Write("Zadejte cislo: ");
+    Console.Clear();
+    Console.WriteLine("****************************");
+    Console.WriteLine("***** Výpis řady čísel *****");
+    Console.WriteLine("****************************");
+    Console.WriteLine("******* Jakub Chabera ********");
+    Console.WriteLine("****************************");
+    Console.WriteLine();
 
+    // Vstup hodnoty do programu - špatně řešený
+    //Console.Write("Zadejte první číslo řady: ");
+    //int first = int.Parse(Console.ReadLine());
+
+    //Vstup hodnoty do programu - řešený správně
+    Console.Write("Zadejte první číslo řady (celé číslo): ");
     int first;
+
     while (!int.TryParse(Console.ReadLine(), out first))
     {
-        Console.Write("Neplatny vstup. Zadejte cislo: ");
+        Console.Write("Nezadali jste celé číslo. Zadejte první číslo řady znovu: ");
     }
 
-    Console.Write("Pro opakovani stisknete 'a', jinak jiny znak: ");
+    Console.Write("Zadejte poslední číslo řady (celé číslo): ");
+    int last;
+
+    while (!int.TryParse(Console.ReadLine(), out last))
+    {
+        Console.Write("Nezadali jste celé číslo. Zadejte poslední číslo řady znovu: ");
+    }
+
+
+    Console.Write("Zadejte diferenci řady (celé číslo): ");
+    int step;
+
+    while (!int.TryParse(Console.ReadLine(), out step))
+    {
+        Console.Write("Nezadali jste celé číslo. Zadejte diferenci znovu: ");
+    }
+
+
+    Console.WriteLine();
+    Console.WriteLine("++++++++++++++++++++++");
+    Console.WriteLine("Zadali jste tyto hodnoty:");
+    Console.WriteLine($"První číslo řady: {0}", first);
+    Console.WriteLine($"Poslední číslo řady: {0}", last);
+    Console.WriteLine($"Diference řady: {0}", step);
+    Console.WriteLine("++++++++++++++++++++++");
+    Console.WriteLine("První číslo: {0}, poslední číslo: {1}, diference: {2}", first, last, step);
+    Console.WriteLine("++++++++++++++++++++++");
+    Console.WriteLine();
+    
+
+
+
+
+
+
+
+
+
+
+
+    Console.WriteLine();
+    Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
     again = Console.ReadLine();
 }

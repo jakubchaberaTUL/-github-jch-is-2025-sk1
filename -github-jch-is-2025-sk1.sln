@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IS-Programy", "IS-Programy", "{EA791347-84B0-53C3-3FC5-55D84BADD500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "program001-vypis-rady", "IS-Programy\program001-vypis-rady\program001-vypis-rady.csproj", "{C5707D3B-67F9-908F-A3BD-D94EA64EDF42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "program000a-zakladni-kod", "program000a-zakladni-kod", "{77A1B646-6F89-CB5E-F060-088A818CDAD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "program", "IS-Programy\program000a-zakladni-kod\program\program.csproj", "{5AE3E96F-20CD-1C55-C447-CCD3B31EEA48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5707D3B-67F9-908F-A3BD-D94EA64EDF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5707D3B-67F9-908F-A3BD-D94EA64EDF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5707D3B-67F9-908F-A3BD-D94EA64EDF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5707D3B-67F9-908F-A3BD-D94EA64EDF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE3E96F-20CD-1C55-C447-CCD3B31EEA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE3E96F-20CD-1C55-C447-CCD3B31EEA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE3E96F-20CD-1C55-C447-CCD3B31EEA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE3E96F-20CD-1C55-C447-CCD3B31EEA48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5707D3B-67F9-908F-A3BD-D94EA64EDF42} = {EA791347-84B0-53C3-3FC5-55D84BADD500}
+		{77A1B646-6F89-CB5E-F060-088A818CDAD0} = {EA791347-84B0-53C3-3FC5-55D84BADD500}
+		{5AE3E96F-20CD-1C55-C447-CCD3B31EEA48} = {77A1B646-6F89-CB5E-F060-088A818CDAD0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41DEB7BE-6C00-4B27-8B13-A78AE61C128B}
+	EndGlobalSection
+EndGlobal
