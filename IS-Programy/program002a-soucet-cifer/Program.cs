@@ -3,7 +3,7 @@ while (again == "a")
 {
     Console.Clear();
     Console.WriteLine("****************************");
-    Console.WriteLine("***** Název programu *****");
+    Console.WriteLine("***** Součet cifer - matematicky *****");
     Console.WriteLine("****************************");
     Console.WriteLine("******* Jakub Chabera ********");
     Console.WriteLine("****************************");

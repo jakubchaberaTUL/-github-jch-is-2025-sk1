@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jakubchabera/Library/Mobile Documents/com~apple~CloudDocs/01 School/Informace a systémy/gitrepozitar/-github-jch-is-2025-sk1/IS-Programy/program001-vypis-rady/program001-vypis-rady.csproj",
-      "projectName": "program001-vypis-rady",
-      "projectPath": "/Users/jakubchabera/Library/Mobile Documents/com~apple~CloudDocs/01 School/Informace a systémy/gitrepozitar/-github-jch-is-2025-sk1/IS-Programy/program001-vypis-rady/program001-vypis-rady.csproj",
+      "projectUniqueName": "/Users/jakubchabera/Library/Mobile Documents/com~apple~CloudDocs/01 School/Informace a systémy/gitrepozitar/-github-jch-is-2025-sk1/IS-Programy/program002b-soucet-cifer/program002b-soucet-cifer.csproj",
+      "projectName": "program002b-soucet-cifer",
+      "projectPath": "/Users/jakubchabera/Library/Mobile Documents/com~apple~CloudDocs/01 School/Informace a systémy/gitrepozitar/-github-jch-is-2025-sk1/IS-Programy/program002b-soucet-cifer/program002b-soucet-cifer.csproj",
       "packagesPath": "/Users/jakubchabera/.nuget/packages/",
-      "outputPath": "/Users/jakubchabera/Library/Mobile Documents/com~apple~CloudDocs/01 School/Informace a systémy/gitrepozitar/-github-jch-is-2025-sk1/IS-Programy/program001-vypis-rady/obj/",
+      "outputPath": "/Users/jakubchabera/Library/Mobile Documents/com~apple~CloudDocs/01 School/Informace a systémy/gitrepozitar/-github-jch-is-2025-sk1/IS-Programy/program002b-soucet-cifer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jakubchabera/.nuget/NuGet/NuGet.Config"
