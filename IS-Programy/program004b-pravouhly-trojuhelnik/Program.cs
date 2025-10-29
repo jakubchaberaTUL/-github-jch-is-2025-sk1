@@ -2,7 +2,6 @@
 while (again == "a")
 {
     Console.Clear();
-    // Hlavička upravena pro nový program
     Console.WriteLine("*********************************************");
     Console.WriteLine("***** Vykreslení pravoúhlého trojúhelníku *****");
     Console.WriteLine("*********************************************");
