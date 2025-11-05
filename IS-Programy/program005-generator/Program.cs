@@ -47,6 +47,15 @@ while (again == "a")
 
     int[] randomNumbers = new int[n];
 
+    // Počítadla kladných, záporných čísel a nul
+    int negativeNumbers = 0;
+    int positiveNumbers = 0;
+    int zeros = 0;
+
+    // sudá a lichá čísla
+    int evenNumbers = 0;
+    int oddNumbers = 0;
+
     Random rand = new Random();
 
     Console.WriteLine("****************************");
@@ -57,7 +66,39 @@ while (again == "a")
     {
         randomNumbers[i] = rand.Next(lowerbound, upperbound + 1);
         Console.WriteLine("{0}", randomNumbers[i]);
+
+        if (randomNumbers[i] < 0)
+        {
+            negativeNumbers++;
+        }
+        else if (randomNumbers[i] > 0)
+        {
+            positiveNumbers++;
+        }
+        else
+        {
+            zeros++;
+        }
+        if (randomNumbers[i] % 2 == 0)
+        {
+            evenNumbers++;
+        }
+        else
+        {
+            oddNumbers++;
+        }
+
     }
+
+    Console.WriteLine("****************************");
+    Console.WriteLine($"Počet kladných čísel: {positiveNumbers}");
+    Console.WriteLine($"Počet záporných čísel: {negativeNumbers}");
+    Console.WriteLine($"Počet nul: {zeros}");
+    Console.WriteLine($"Počet sudých čísel: {evenNumbers}");
+    Console.WriteLine($"Počet lichých čísel: {oddNumbers}");
+    Console.WriteLine("****************************");
+
+
 
 
 
