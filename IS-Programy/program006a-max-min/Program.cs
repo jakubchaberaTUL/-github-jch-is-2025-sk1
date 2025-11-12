@@ -18,6 +18,14 @@ while (again == "a")
         Console.Write("Nezadali jste číslo. Zadejte hodnotu znovu: ");
     }
 
+    Console.Write("Zadejte minimální hodnotu generovaných čísel: ");
+    int lowerbound;
+
+    while (!int.TryParse(Console.ReadLine(), out lowerbound))
+    {
+        Console.Write("Nezadali jste číslo. Zadejte hodnotu znovu: ");
+    }
+
     Console.Write("Zadejte maximální hodnotu generovaných čísel: ");
     int upperbound;
 
@@ -26,13 +34,6 @@ while (again == "a")
         Console.Write("Nezadali jste číslo. Zadejte hodnotu znovu: ");
     }
 
-    Console.Write("Zadejte minimální hodnotu generovaných čísel: ");
-    int lowerbound;
-
-    while (!int.TryParse(Console.ReadLine(), out lowerbound))
-    {
-        Console.Write("Nezadali jste číslo. Zadejte hodnotu znovu: ");
-    }
 
     Console.WriteLine();
     Console.WriteLine("Zadané hodnoty:");
@@ -83,6 +84,54 @@ while (again == "a")
     Console.WriteLine($"Minimální hodnota: {min}");
     Console.WriteLine($"Pozice minima v poli: {posMin}");
     Console.WriteLine("****************************");
+
+
+    //Vykreslení přesýpacích hodin podle maxima
+    Console.WriteLine();
+    Console.WriteLine("Vykreslení přesýpacích hodin podle maxima:");
+    if (max >= 3)
+    {
+        for (int i = 0; i < max; i++)
+        {
+            int spaces, stars;
+            if (i < max / 2)
+            {
+                spaces = i;
+                stars = max - 2 * i;
+            }
+            else
+            {
+                spaces = max - i - 1;
+                if (max % 2 == 1)
+                {
+                    stars = 2 * (i - max / 2) + 1;
+                }
+                else
+                {
+                    stars = 2 * (i - max / 2) + 2;
+                }
+            }
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            for (int sp = 0; sp < spaces; sp++)
+            {
+                Console.Write(" ");
+            }
+
+            for (int st = 0; st < stars; st++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
+    }
+    else
+    {
+        Console.WriteLine("Maximum je menší než 3, obrazec se nevykreslí.");
+    }
+
+
+
 
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
