@@ -56,7 +56,6 @@ while (again == "a")
     }
 
     Stopwatch MyStopwatch = new Stopwatch();
-
     int compare = 0;
     int change = 0;
 
@@ -83,6 +82,26 @@ while (again == "a")
     for (int i = 0; i < n; i++)
     {
         Console.WriteLine("Seřazená čísla: {0}", randomNumbers[i]);
+    }
+
+    if (n >= 2)
+    {
+        for (int i = 1; i < n; i++)
+        {
+            if (randomNumbers[i] < randomNumbers[0])
+            {
+                velikostObrazce = randomNumbers[i];
+                break;
+            }
+        }
+        if (velikostObrazce == 0) velikostObrazce = randomNumbers[1];
+    }
+
+    Console.WriteLine($"Velikost obrazce: {velikostObrazce}");
+
+    if (velikostObrazce > 0)
+    {
+        
     }
 
 
