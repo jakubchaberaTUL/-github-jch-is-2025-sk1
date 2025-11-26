@@ -107,24 +107,4 @@ while (again == "a")
             {
                 if (i == 0 || i == velikostObrazce - 1 || j == 0 || j == velikostObrazce - 1)
                 {
-                    Console.Write("*");
-                }
-                else
-                {
-                    Console.Write(" ");
-                }
-            }
-            Console.WriteLine();
-        }
-    }
-
-
-    Console.WriteLine();
-    Console.WriteLine($"Počet porovnání: {compare}");
-    Console.WriteLine($"Počet prohozů: {change}");
-    Console.WriteLine($"Čas potřeby na seřazení čísel: {MyStopwatch.ElapsedMilliseconds} ms");
-
-    Console.WriteLine();
-    Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
-    again = Console.ReadLine();
-}
+                    Console.W
