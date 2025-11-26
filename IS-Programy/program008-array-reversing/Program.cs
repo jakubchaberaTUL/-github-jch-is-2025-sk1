@@ -3,7 +3,7 @@ while (again == "a")
 {
     Console.Clear();
     Console.WriteLine("****************************");
-    Console.WriteLine("*Generátor pseudonáhodných čísel**");
+    Console.WriteLine("*Reverze pole ***************");
     Console.WriteLine("****************************");
     Console.WriteLine("******* Jakub Chabera ********");
     Console.WriteLine("****************************");
@@ -56,6 +56,19 @@ while (again == "a")
     }
 
 
+    for (int i = 0; i < n / 2; i++)
+    {
+        int temp = randomNumbers[i];
+        randomNumbers[i] = randomNumbers[n - 1 - i];
+        randomNumbers[n - 1 - i] = temp;
+    }
+
+    Console.WriteLine("****************************");
+    Console.WriteLine("Opačná posloupnost čísel: ");
+    for (int i = 0; i < n; i++)
+    {
+        Console.WriteLine("{0}", randomNumbers[i]);
+    }
 
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
