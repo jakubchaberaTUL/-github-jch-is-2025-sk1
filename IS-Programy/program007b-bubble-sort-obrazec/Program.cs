@@ -101,7 +101,13 @@ while (again == "a")
 
     if (velikostObrazce > 0)
     {
-        
+        for (int i = 0; i < velikostObrazce; i++)
+        {
+            for (int j = 0; j < velikostObrazce; j++)
+            {
+                
+            }
+        }
     }
 
 
