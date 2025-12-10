@@ -1,25 +1,28 @@
+
 string again = "a";
 while (again == "a")
 {
     Console.Clear();
-    Razitko();
 
-    ulong a = NactiCislo("Zadejte číslo a: ");
-    ulong b = NactiCislo("Zadejte číslo b: ");
+    // Metoda pro razítko - hlavičku
+    razitko();
+    
+    // Načítání hodnot
+    ulong a = nactiCislo("Zadejte číslo a: ");
+    ulong b = nactiCislo("Zadejte číslo b: ");
 
-    ulong nsd = VypocetNSD(a, b);
-    ulong nsn = VypocetNSN(a, b, nsd);
+    ulong nsd = vypocitatNSD(a, b);
+    ulong nsn = vypocitatNSN(a, b, nsd); 
 
-   
-    Console.WriteLine($"NSD({a}, {b}) = {nsd}");
-    Console.WriteLine($"NSN({a}, {b}) = {nsn}");
+    zobrazitVysledky(a, b, nsd, nsn);
 
-    Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
     again = Console.ReadLine();
 }
 
-void Razitko()
+/* Hlavní program - konec */
+
+static void razitko()
 {
     Console.WriteLine("****************************");
     Console.WriteLine("***** Výpočet NSD a NSN *****");
@@ -27,9 +30,10 @@ void Razitko()
     Console.WriteLine("******* Jakub Chabera ********");
     Console.WriteLine("****************************");
     Console.WriteLine();
-}
+}    
 
-ulong NactiCislo(string zprava)
+/* metoda pro načtení čísel */
+static ulong nactiCislo(string zprava)
 {
     Console.Write(zprava);
     ulong cislo;
@@ -37,23 +41,37 @@ ulong NactiCislo(string zprava)
     {
         Console.Write("Nezadali jste přirozené číslo. Zadejte hodnotu znovu: ");
     }
+
     return cislo;
+
 }
 
-ulong VypocetNSD(ulong a, ulong b)
-{
-    while (b != 0)
-    {
-        ulong temp = b;
-        b = a % b;
-        a = temp;
+/* metoda pro výpočet NSD dvou čísel */
+static ulong vypocitatNSD(ulong a, ulong b) {
+    while(a != b ) {
+        if(a > b)
+            a = a - b;
+        else
+            b = b - a;    
     }
-    return a;
+    return a;   
 }
 
-ulong VypocetNSN(ulong a, ulong b, ulong nsd)
-{
-    if (a == 0 || b == 0) return 0;
-    return (a / nsd) * b;
+/* metoda pro výpočet NSN na základě známé hodnoty NSD */
+static ulong vypocitatNSN(ulong a, ulong b, ulong nsd) {
+    return (a*b)/nsd;
 }
+
+
+static void zobrazitVysledky(ulong a, ulong b, ulong nsd, ulong nsn) {
+    Console.WriteLine();
+    Console.WriteLine("================================");
+    Console.WriteLine("NSD čísel {0} a {1} je {2}", a, b, nsd);
+    Console.ForegroundColor = ConsoleColor.DarkRed;
+    Console.WriteLine("================================");
+    Console.WriteLine("NSN čísel {0} a {1} je {2}", a, b, nsn);
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.White;
+}
+
 
